@@ -1,0 +1,7 @@
+User_variable:
+  kin0_path: /Path/to/kino
+  case_group: name
+  master_list: /path/to/master/list
+Master_list:
+  use: FALSE
+
