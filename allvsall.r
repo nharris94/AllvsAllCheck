@@ -1,8 +1,9 @@
 library(tidyverse)
 library(data.table)
 library(yaml)
+library(here)
 
-yaml_file <- read_yaml("Input/config.yaml")
+yaml_file <- read_yaml(here("Input", "config.yaml"))
 
 kin <- fread(yaml_file$User_variable$kin0_path)
 kin_related <- kin %>% filter(Kinship >= 0.0884)
